@@ -1,0 +1,21 @@
+
+<%- include('./partials/header') %>
+
+
+<%- include('./partials/nav') %>
+
+<h1>BHAI KI Library</h1>
+
+<% books.forEach((book, index) => {%>
+    <ul>
+        <a href=""><%= book.bookname %></a>
+        <a href=""><%= book.auther %></a>
+        <a href=""><%= book.price %></a>
+    </ul>
+    <a class="action-btn" href="/delete/<%=index  %>">delete book</a>
+    <a class="action-btn" href="/update/<%= index %>">update book</a>
+    <hr>
+<%}); %>
+
+<%- include('./partials/footer') %>
+

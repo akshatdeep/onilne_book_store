@@ -1,0 +1,16 @@
+<%- include('./partials/header') %>
+
+
+<%- include('./partials/nav') %>
+
+<h1>create book</h1>
+
+<form action="/create" method="post">
+    <input type="text" name="bookname" placeholder="Enter bookname">
+    <input type="text" name="auther" placeholder="Book auther">
+    <input type="text" name="price" placeholder="enter book price">
+    <input type="text" name="description" placeholder="description">
+    <button>Add Book</button>
+</form>
+
+<%- include('./partials/footer') %>
